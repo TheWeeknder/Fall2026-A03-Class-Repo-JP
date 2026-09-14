@@ -1,4 +1,5 @@
 @page "/checkout/confirm"
+@inject NavigationManager Navigation
 
 <PageTitle>Checkout - Confirmation</PageTitle>
 
@@ -32,9 +33,13 @@
 @code {
     private void GoBack()
     {
+        Navigation.NavigateTo("/checkout/payment", replace: true);
+
     }
 
     private void StartOver()
     {
+        Navigation.NavigateTo("/checkout/shipping", replace: true);
+
     }
 }

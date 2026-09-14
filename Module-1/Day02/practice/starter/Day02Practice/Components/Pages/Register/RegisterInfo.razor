@@ -1,6 +1,7 @@
 @page "/register/info"
 @* TODO (Practice 1, Step 1): Inject NavigationManager.
    Hint: @inject NavigationManager Navigation *@
+@inject NavigationManager Navigation
 
 <PageTitle>Register - Personal Info</PageTitle>
 
@@ -30,5 +31,6 @@
     {
         @* TODO (Practice 1, Step 2): Use NavigateTo() to navigate to "/register/preferences".
            Hint: Navigation.NavigateTo("/register/preferences"); *@
+        Navigation.NavigateTo("/register/preferences");
     }
 }

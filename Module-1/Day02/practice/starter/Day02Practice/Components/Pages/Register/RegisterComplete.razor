@@ -1,6 +1,7 @@
 @page "/register/complete"
 @* TODO (Practice 1, Step 6): Inject NavigationManager.
    Hint: @inject NavigationManager Navigation *@
+@inject NavigationManager Navigation
 
 <PageTitle>Register - Complete</PageTitle>
 
@@ -24,5 +25,6 @@
     private void StartOver()
     {
         @* TODO (Practice 1, Step 7): Use NavigateTo() to go back to "/register/info" to start over. *@
+        Navigation.NavigateTo("/register/info");
     }
 }

@@ -1,3 +1,5 @@
+@page "/products/{category:alpha}/{id:int:min(1)}"
+
 <PageTitle>Product Detail</PageTitle>
 
 <h1>Product Detail</h1>
@@ -47,5 +49,10 @@
 </div>
 
 @code {
-    
+    [Parameter]
+    public string Category { get; set; } = string.Empty;
+
+    [Parameter]
+    public int Id { get; set; }
+
 }
